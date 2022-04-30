@@ -24,4 +24,22 @@ public class Inventory {
         }
     }
 
+    public void readDataset(String file){
+        String line="";
+        String seperator=",";
+        try{
+            BufferedReader br= new BufferedReader(new FileReader(file));
+            br.readLine();
+            while ((line=br.readLine())!=null){
+                String[] item=line.split(seperator);
+                double quantity=Double.parseDouble(item[2]);
+                double price=Double.parseDouble(item[3]);
+                Item newItem = new Item(item[0],item[1],quantity,price);
+                items.put(item[1],newItem);
+            }
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+    }
 }
