@@ -18,11 +18,11 @@ public class InventoryCheck implements CheckHandler{
 
         Inventory inv = Inventory.getInstance();
         inv.readDataset("Sample_Inventory.csv");
-        HashMap<String, Item> csvitems= inv.items;
+        HashMap<String, Item> csvitems= Inventory.items;
 
         InputRead readd = new InputRead();
         readd.readFile("sample_input.csv");
-        List<List<String>> ip= readd.list;
+        List<List<String>> ip= InputRead.list;
         
         int essentialCap=3;
         int luxuryCap=4;
