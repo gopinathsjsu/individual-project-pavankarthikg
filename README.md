@@ -5,14 +5,12 @@
 
 # Problem Statement 
 
-We designed and implemented a forum -java application where users can order and purchase products. The forum has all the information regarding the item needed. There is a limit on the number of items like Essentials are restricted to a maximum of 3, Luxury to 4, and Miscellaneous to 6. The application validates if the requested quantity for each item is permissible or not. Once the validation is done, if the cart is valid, application adds prices and displays the total amount and card details will be used for payment process else displays a txt file - Please correct quantities.
+Design and implement a Java application which maintains an internal, static database. There is a limit on the number of items like Essentials are restricted to a maximum of 3, Luxury to 4, and Miscellaneous to 6. The application validates if the requested quantity for each item is permissible or not. Once the validation is done, if the cart is valid, application adds prices and displays the total amount and card details will be used for payment process else displays a txt file - Please correct quantities.
 
 # Instructions to run the application
 
 Go to repo individual-project-praneetha-moturi and clone the repository or download the zip file.
-You need Visual studio code IDE to run the code.
-
-Open the zipped folder or the entire folder in VSCode using Open Project.
+You need Visual studio code IDE or Eclipse IDE to run the code. Open the zipped folder or the entire folder in your preferred IDE.
 
 After opening the project go to src/inventory --> InventoryMain.java, compile and run the project.
 

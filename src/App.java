@@ -1,15 +1,21 @@
 import java.util.*;
-import java.io.BufferedReader;
+import java.io.BufferedReader;  
 import java.io.FileReader;
-import java.io.IOException;
-
+import java.io.IOException;  
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        InventoryCheck firstCheck = new InventoryCheck();
-        PriceCheck secondCheck = new PriceCheck();
 
-        firstCheck.setNextStep(secondCheck);
-        firstCheck.check();
+    public static void main(String[] args) {
+    
+    	
+    	CheckInventory check1= new CheckInventory();
+    	CheckPrice check2= new CheckPrice();
+    
+    	check1.setNextStep(check2);
+//    	System.out.println("Hello world");
+    	
+    	check1.check();
+
+    	
     }
 }

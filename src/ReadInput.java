@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InputRead {
+public class ReadInput {
     static List<List<String>> list = new ArrayList<>();
     public void readFile(String filePath){
         String line="";
