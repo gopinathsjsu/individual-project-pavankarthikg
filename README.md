@@ -12,16 +12,13 @@ Design and implement a Java application which maintains an internal, static data
 Go to repo individual-project-pavankarthikg and clone the repository or download the zip file.
 You need Visual studio code IDE or Eclipse IDE to run the code. Open the zipped folder or the entire folder in your preferred IDE.
 
-After opening the project go to src --> billing.java, compile and run the project.
+After opening the project go to src --> Billing.java, compile and run the project.
 
 If the java version is not compatible please download the correct JDK version ( Oracle JDK 17).
 * Install java extensions in visual studio code.
 
-Build and run the code next and you will get the output displayed in Sample-Output.csv file.
-
-Output is displayed in the terminal and Sample-Output.csv file or for the errors the logs.txt file is generated and can check the same in the project folder under Sample-Output.csv or logs.txt
-
-For each output file, change the input to be given like "input1-Shee1.csv" or "input2-Sheet1.csv" according to inputs. For additional inputs other than the 3 mentioned, add extra input file to .csv files and repeat the same to run the code.
+# For MaVeN installation
+mvn clean install
 
 ## Dependency Management
 

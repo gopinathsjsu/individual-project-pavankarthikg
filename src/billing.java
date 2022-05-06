@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;  
 
-public class billing {
+public class Billing {
     public static void main(String[] args) {
     	CheckInventory check1= new CheckInventory();
     	CheckPrice check2= new CheckPrice();
