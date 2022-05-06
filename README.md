@@ -48,8 +48,11 @@ This is a behavioral pattern. The application used this pattern to process the o
 # 3 Test cases
 
 1. Implementing the sample input given.
-<img src="/screenshots/rightinput.png" alt="Sample input and ouput" title="Sample input and output">
+<img src="/screenshots/rightInput.png" alt="Sample input and ouput" title="Sample input and output">
 <img src="/screenshots/rightoutput.png" alt="Sample input and ouput" title="Sample input and output">
-2. Error generating testcase.
-3. Testacse #3
- 
+2. Testacse #2
+<img src="/screenshots/input3.png" alt="Sample input and ouput" title="Sample input and output">
+<img src="/screenshots/input3_OP.png" alt="Sample input and ouput" title="Sample input and output">
+3. Error generating testcase.
+ <img src="/screenshots/errortext11.png" alt="Sample input and ouput" title="Sample input and output">
+<img src="/screenshots/errortextOutput.png" alt="Sample input and ouput" title="Sample input and output">
