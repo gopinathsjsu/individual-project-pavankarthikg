@@ -45,5 +45,11 @@ In the chain of responsibility pattern, a request from the client is passed to 
 
 This is a behavioral pattern. The application used this pattern to process the order requests validation.  First It loads input files, validates if the items are present in database, moves to validate the order as per the limited quantity and then adds the total amount to be displayed.
 
+# 3 Test cases
 
+1. Implementing the sample input given.
+<img src="/screenshots/rightinput.png" alt="Sample input and ouput" title="Sample input and output">
+<img src="/screenshots/rightoutput.png" alt="Sample input and ouput" title="Sample input and output">
+2. Error generating testcase.
+3. Testacse #3
  
