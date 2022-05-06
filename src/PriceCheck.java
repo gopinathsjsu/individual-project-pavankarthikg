@@ -2,7 +2,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.List;
 
-public class CheckPrice implements CheckHandler {
+public class PriceCheck implements CheckHandler {
 	private CheckHandler nextStep;
 
 	public void setNextStep(CheckHandler nextHandler) {

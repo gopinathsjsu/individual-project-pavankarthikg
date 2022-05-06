@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-public class CheckInventory implements CheckHandler {
+public class InventoryCheck implements CheckHandler {
 	
 	private CheckHandler nextStep;
 	public void setNextStep(CheckHandler nextHandler) {
