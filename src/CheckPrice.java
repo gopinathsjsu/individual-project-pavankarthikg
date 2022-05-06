@@ -13,11 +13,11 @@ public class CheckPrice implements CheckHandler {
 	public void check() {
 		double totalPrice=0;
 		List<List<String>> inputList = ReadInput.inputList;
-		try (PrintWriter pw = new PrintWriter("output.csv")) {
+		try (PrintWriter pw = new PrintWriter("output1.csv")) {
 			StringBuilder sb = new StringBuilder();
-			sb.append("Item Name,");
+			sb.append("Item,");
 			sb.append("Quantity,");
-			sb.append("Total Price");
+			sb.append("Price");
 			sb.append("\n");
 			for (List<String> item : inputList) {
 				String itemNam = item.get(0);
@@ -29,13 +29,13 @@ public class CheckPrice implements CheckHandler {
 				sb.append(price);
 				sb.append("\n");
 			}
-			sb.append("Total"+",");
+			sb.append("TotalPrice"+",");
 			sb.append(",");
 			sb.append(totalPrice);
 	
 			pw.write(sb.toString());
 		} catch (FileNotFoundException e) {
-			System.out.println("file not found output");
+			System.out.println("FileNotFoundError");
 		}
 	}
 }

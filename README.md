@@ -28,3 +28,22 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 ## Setting up
 
 Make sure you have the latest Java JDK version. The version used in this development: 17.0.2 2022-01-18
+
+# Design Patterns 
+
+Singleton Pattern
+
+Chain of Responsibility
+
+# Singleton
+This creational pattern involves a single class which is responsible to create an object while making sure that only single object gets created and provides a way to directly access its only object without the need to instantiate the object of the class.
+
+We used this pattern to build database for the system. The system stores a data from in-memory database therefore we used singleton pattern so that we will get same instance of data throughout the operations.
+
+# Chain of Responsibility
+In the chain of responsibility pattern, a request from the client is passed to a chain of objects to process them. Later, the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+
+This is a behavioral pattern. The application used this pattern to process the order requests validation.  First It loads input files, validates if the items are present in database, moves to validate the order as per the limited quantity and then adds the total amount to be displayed.
+
+
+ 

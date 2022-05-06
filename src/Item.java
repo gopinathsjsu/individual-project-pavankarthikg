@@ -3,7 +3,7 @@ public class Item {
 	protected String item;
 	protected double quantity;
 	protected double price;
-	public Item(String category, String item, double quantity, double price) {
+	public Item(String item, String category, double quantity, double price) {
 		super();
 		this.category = category;
 		this.item = item;

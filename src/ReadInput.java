@@ -14,13 +14,13 @@ public class ReadInput{
 			br.readLine();
 			while ((line = br.readLine()) != null) // returns a Boolean value
 			{
-				String[] employee = line.split(",");
+				String[] card = line.split(",");
 				ArrayList<String> temp = new ArrayList<String>();
-				temp.add(employee[0]);
-				temp.add(employee[1]);
-				temp.add(employee[2]);
+				temp.add(card[0]);
+				temp.add(card[1]);
+				temp.add(card[2]);
 				
-				CardDetails.cards.add(employee[2]);
+				CardDetails.cards.add(card[2]);
 				inputList.add(temp);
 
 			}

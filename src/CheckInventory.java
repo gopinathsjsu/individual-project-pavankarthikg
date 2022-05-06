@@ -17,18 +17,12 @@ public class CheckInventory implements CheckHandler {
 		boolean essflag=false;
 		boolean luxflag=false;
 		boolean miscflag=false;
-						
 		String quantflag="";
 		
 		HashMap<String, Item> dbitems = i1.items;
-//		HashMap<String,Integer> a
 		ReadInput r1 = new ReadInput();
-		r1.readFile("Input1 - Sheet1.csv");
+		r1.readFile("Input3 - Sheet1.csv");
 		List<List<String>> given = r1.inputList;
-//		for(List<String> item:given) {
-//			System.out.println(item);
-//		}
-//		System.out.println(dbitems.get("Milk"));
 		int essentialQuantity=5;
 		int luxuryQuantity=3;
 		int miscQuantity=6;
@@ -39,11 +33,9 @@ public class CheckInventory implements CheckHandler {
 				flag= true;
 				quantflag+= "invalid quantity for "+itemName+" "+ item.get(1)+"\n";
 			}
-//			System.out.println(dbitems.get(itemName).category);
 			switch(dbitems.get(itemName).category) {
-			case "Essential":
+			case "Essentials":
 				essentialQuantity-=quantity;
-				
 				if(essentialQuantity<0) {
 					flag=true;
 					essflag=true;
@@ -52,7 +44,6 @@ public class CheckInventory implements CheckHandler {
 				
 			case "Luxury":
 				luxuryQuantity-=quantity;
-//				System.out.println(luxuryQuantity);
 				if(luxuryQuantity<0) {
 					flag=true;
 					luxflag=true;
@@ -70,11 +61,9 @@ public class CheckInventory implements CheckHandler {
 				break;
 			}
 		}
-		/*System.out.println(flag || essflag || luxflag || miscflag);
-		System.out.println("L flag"+ luxflag);*/
 		if(flag || essflag || luxflag || miscflag) {
 			try {
-			      FileWriter myWriter = new FileWriter("errors.txt");
+			      FileWriter myWriter = new FileWriter("errors1.txt");
 			      myWriter.write("Please correct quantities"+ "\n");
 			      myWriter.write(quantflag);
 			      if(quantflag.equals("")) {
@@ -93,7 +82,6 @@ public class CheckInventory implements CheckHandler {
 			    }
 			return;
 		}
-	
 		nextStep.check();
 		
 	}

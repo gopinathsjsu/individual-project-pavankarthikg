@@ -1,8 +1,3 @@
-import java.util.*;
-import java.io.BufferedReader;  
-import java.io.FileReader;
-import java.io.IOException;  
-
 public class Billing {
     public static void main(String[] args) {
     	CheckInventory check1= new CheckInventory();
