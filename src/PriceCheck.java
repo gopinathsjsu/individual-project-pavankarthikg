@@ -10,7 +10,7 @@ public class PriceCheck implements CheckHandler{
 
     public void check(){
         double totPrice=0;
-        List<List<String>> inpuList=InputRead.inputList;
+        List<List<String>> inpuList=InputRead.list;
         try(PrintWriter pw=new PrintWriter("output.csv")){
             StringBuilder sb = new StringBuilder();
             sb.append("Item Name,");

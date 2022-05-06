@@ -36,6 +36,7 @@ public class Inventory {
                 double price=Double.parseDouble(item[3]);
                 Item newItem = new Item(item[0],item[1],quantity,price);
                 items.put(item[1],newItem);
+                System.out.println(item[1]);
             }
         }
         catch(IOException e){
