@@ -1,33 +1,37 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+public class ReadInput{
+	static List<List<String>> inputList =  new ArrayList<>();
+	
+	public void readFile(String filePath) {
+		String line = "";
+		
+		try {
+			// parsing a CSV file into BufferedReader class constructor
+			BufferedReader br = new BufferedReader(new FileReader(filePath));
+			br.readLine();
+			while ((line = br.readLine()) != null) // returns a Boolean value
+			{
+				String[] employee = line.split(",");
+				ArrayList<String> temp = new ArrayList<String>();
+				temp.add(employee[0]);
+				temp.add(employee[1]);
+				temp.add(employee[2]);
+				
+				CardDetails.cards.add(employee[2]);
+				inputList.add(temp);
 
-public class ReadInput {
-    static List<List<String>> list = new ArrayList<>();
-    public void readFile(String filePath){
-        String line="";
-        try{
-            BufferedReader br=new BufferedReader(new FileReader(filePath));
-            br.readLine();
-            while((line=br.readLine())!=null){
-                String[] employee = line.split(",");
-                ArrayList<String> tmp=new ArrayList<>();
-                tmp.add(employee[0]);
-                tmp.add(employee[1]);
-                tmp.add(employee[2]);
-
-                CardDetails.cards.add(employee[2]);
-                list.add(tmp);
-            }
-            System.out.println("Cards");
-            System.out.println(CardDetails.cards);
-
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-    }
-    
+			}
+			
+			System.out.println("Cards hashset");
+			System.out.println(CardDetails.cards);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }
+

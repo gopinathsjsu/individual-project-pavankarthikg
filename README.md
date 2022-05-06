@@ -9,10 +9,10 @@ Design and implement a Java application which maintains an internal, static data
 
 # Instructions to run the application
 
-Go to repo individual-project-praneetha-moturi and clone the repository or download the zip file.
+Go to repo individual-project-pavankarthikg and clone the repository or download the zip file.
 You need Visual studio code IDE or Eclipse IDE to run the code. Open the zipped folder or the entire folder in your preferred IDE.
 
-After opening the project go to src/inventory --> InventoryMain.java, compile and run the project.
+After opening the project go to src --> billing.java, compile and run the project.
 
 If the java version is not compatible please download the correct JDK version ( Oracle JDK 17).
 * Install java extensions in visual studio code.
