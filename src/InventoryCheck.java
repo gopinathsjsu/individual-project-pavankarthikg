@@ -19,11 +19,11 @@ public class InventoryCheck implements CheckHandler {
 		
 		HashMap<String, Item> dbitems = i1.items;
 		InputRead r1 = new InputRead();
-		r1.readFile("Input1 - Sheet1.csv");
+		r1.readFile("Input3.csv");
 		List<List<String>> given = r1.inputList;
-		int essentialQuantity=5;
-		int luxuryQuantity=3;
-		int miscQuantity=6;
+		int essentialQuantity=i1.capCategory.get("Essentials");
+		int luxuryQuantity=i1.capCategory.get("Luxury");
+		int miscQuantity=i1.capCategory.get("Misc");
 		for (List<String> item: given) {
 			double quantity = Double.parseDouble(item.get(1));
 			String itemName = item.get(0);
@@ -66,9 +66,9 @@ public class InventoryCheck implements CheckHandler {
 			      myWriter.write(quantflag);
 			      if(quantflag.equals("")) {
 			    	  if(essflag)
-			    	  myWriter.write("Essentials reached to the cap"+ "\n");
+			    	  myWriter.write("Essential items reached the cap limit"+ "\n");
 			    	  if(luxflag)
-				    	  myWriter.write("Luxury reached to the cap"+ "\n");
+				    	  myWriter.write("Luxury reached the cap limit"+ "\n");
 			    	  if(miscflag)
 				    	  myWriter.write("Misc items reached to the cap"+ "\n");
 			      }

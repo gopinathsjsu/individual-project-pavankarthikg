@@ -7,9 +7,9 @@ public class Inventory {
 	static HashMap<String, Item> items = new HashMap<String, Item>();
 	static HashMap<String,Integer> capCategory = new HashMap<String,Integer>();
 	private Inventory() {
-		capCategory.put("Essentials",3);
-		capCategory.put("Luxury",4);
-		capCategory.put("Misc",6);
+		capCategory.put("Essentials",10);
+		capCategory.put("Luxury",10);
+		capCategory.put("Misc",10);
 	}
 	public static Inventory getInstance() {
 		if (inventory != null)
@@ -30,7 +30,7 @@ public class Inventory {
 				String[] item = line.split(splitBy);
 				double quantity = Double.parseDouble(item[2]);//
 				double price = Double.parseDouble(item[3]);
-				Item newItem = new Item(item[1], item[0], quantity, price);
+				Item newItem = new Item(item[0],item[1],quantity, price);
 				items.put(item[0], newItem);
 			}
 

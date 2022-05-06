@@ -16,9 +16,17 @@ public class InputRead{
 				ArrayList<String> temp = new ArrayList<String>();
 				temp.add(card[0]);
 				temp.add(card[1]);
-				temp.add(card[2]);
+				if(card.length > 2){
+					temp.add(card[2]);
+					CardDetails.cards.add(card[2]);
+				}
+				else{
+					temp.add("");
+					CardDetails.cards.add("");
+				}
 				
-				CardDetails.cards.add(card[2]);
+				
+				
 				inputList.add(temp);
 				//br.close();
 			}
