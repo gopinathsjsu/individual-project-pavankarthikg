@@ -18,7 +18,7 @@ If the java version is not compatible please download the correct JDK version ( 
 * Install java extensions in visual studio code.
 
 # For MaVeN installation
-mvn clean install
+```mvn clean install```
 
 ## Dependency Management
 
