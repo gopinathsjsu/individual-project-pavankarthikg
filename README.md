@@ -33,9 +33,9 @@ Make sure you have the latest Java JDK version. The version used in this develop
 
 # Design Patterns 
 
-## Singleton Pattern
+### Singleton Pattern
 
-## Chain of Responsibility
+### Chain of Responsibility
 
 # Singleton
 This creational pattern involves a single class which is responsible to create an object while making sure that only single object gets created and provides a way to directly access its only object without the need to instantiate the object of the class.
