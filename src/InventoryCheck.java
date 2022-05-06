@@ -20,8 +20,8 @@ public class InventoryCheck implements CheckHandler {
 		String quantflag="";
 		
 		HashMap<String, Item> dbitems = i1.items;
-		ReadInput r1 = new ReadInput();
-		r1.readFile("Input3 - Sheet1.csv");
+		InputRead r1 = new InputRead();
+		r1.readFile("Input1 - Sheet1.csv");
 		List<List<String>> given = r1.inputList;
 		int essentialQuantity=5;
 		int luxuryQuantity=3;

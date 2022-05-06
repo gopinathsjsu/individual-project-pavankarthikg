@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
-public class ReadInput{
+public class InputRead{
 	static List<List<String>> inputList =  new ArrayList<>();
 	
 	public void readFile(String filePath) {

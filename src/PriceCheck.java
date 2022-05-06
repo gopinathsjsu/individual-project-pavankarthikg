@@ -12,8 +12,8 @@ public class PriceCheck implements CheckHandler {
 
 	public void check() {
 		double totalPrice=0;
-		List<List<String>> inputList = ReadInput.inputList;
-		try (PrintWriter pw = new PrintWriter("output1.csv")) {
+		List<List<String>> inputList = InputRead.inputList;
+		try (PrintWriter pw = new PrintWriter("output2.csv")) {
 			StringBuilder sb = new StringBuilder();
 			sb.append("Item,");
 			sb.append("Quantity,");

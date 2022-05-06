@@ -17,6 +17,8 @@ After opening the project go to src --> Billing.java, compile and run the projec
 If the java version is not compatible please download the correct JDK version ( Oracle JDK 17).
 * Install java extensions in visual studio code.
 
+Before running each time, check for the CSV, TXT file namings in InventoryCheck and PriceCheck
+
 # For MaVeN installation
 ```mvn clean install```
 
