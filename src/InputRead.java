@@ -7,9 +7,7 @@ public class InputRead{
 	
 	public void readFile(String filePath) {
 		String line = "";
-		
 		try {
-			// parsing a CSV file into BufferedReader class constructor
 			BufferedReader br = new BufferedReader(new FileReader(filePath));
 			br.readLine();
 			while ((line = br.readLine()) != null) // returns a Boolean value
@@ -22,12 +20,10 @@ public class InputRead{
 				
 				CardDetails.cards.add(card[2]);
 				inputList.add(temp);
-
+				//br.close();
 			}
-			
 			System.out.println("Cards hashset");
 			System.out.println(CardDetails.cards);
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

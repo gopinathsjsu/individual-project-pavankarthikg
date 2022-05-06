@@ -4,12 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 
 public class InventoryCheck implements CheckHandler {
-	
 	private CheckHandler nextStep;
 	public void setNextStep(CheckHandler nextHandler) {
 		this.nextStep = nextHandler;
 	}
-	
 	public void check() {
 		Inventory i1 = Inventory.getInstance();
 		i1.readDataset("Dataset - Sheet1.csv");
@@ -83,8 +81,5 @@ public class InventoryCheck implements CheckHandler {
 			return;
 		}
 		nextStep.check();
-		
 	}
-
-	
 }
